@@ -1,0 +1,266 @@
+{
+	"username": "kamisaki",
+	"title": "Nixus Start Page",
+	"theme": {
+		"name": "Catppuccin Mocha",
+		"backgroundColor": "#11111b",
+		"windowColor": "#1e1e2e",
+		"textColor": "#cdd6f4",
+		"black": "#45475A",
+		"red": "#f38ba8",
+		"green": "#a6e3a1",
+		"yellow": "#f9e2af",
+		"blue": "#89b4fa",
+		"magenta": "#f5c2e7",
+		"cyan": "#94e2d5",
+		"white": "#bac2de",
+		"gray": "#97989d"
+	},
+	"wallpaper": {
+		"url": "assets/wallpaper.png",
+		"easing": "ease-in-out",
+		"fadeIn": true,
+		"blur": true
+	},
+	"terminal": {
+		"fixedHeight": false,
+		"windowGlow": true,
+		"windowGlowColor": "#291f3325",
+		"textGlow": false,
+		"opacity": 10,
+		"blur": 16
+	},
+	"prompt": {
+		"ctrlC": true,
+		"placeholder": "command...",
+		"placeholderColor": "gray",
+		"userColor": "green",
+		"atColor": "gray",
+		"hostColor": "magenta",
+		"promptColor": "magenta",
+		"promptSymbol": "❯",
+		"caretColor": "green",
+		"selectionBg": "yellow",
+		"selectionFg": "black"
+	},
+	"fetch": {
+		"timeFormat": "HH:mm",
+		"dateFormat": "DD/MM/YYYY",
+		"titleColor": "yellow",
+		"image": "assets/icon.png",
+		"data": [
+			"Browser: {browser} {browserVersion}",
+			"Engine: {engineName}",
+			"{seperator}",
+			"OS: {osReleaseName}",
+			"Theme: {theme}",
+			"{seperator}",
+			"Time: {time}",
+			"Date: {date}",
+			"{seperator}",
+			"{colors}"
+		]
+	},
+	"urlLaunch": {
+		"target": "_self",
+		"hoverColor": "magenta"
+	},
+	"search": {
+		"default": "https://duckduckgo.com/?t=ffab&q={}",
+		"target": "_self",
+		"shortcutRegex": "(!?[A-Za-z0-9]+) (.*)",
+		"shortcuts": [
+			{
+				"alias": "g",
+				"name": "Google Search",
+				"url": "https://google.com/search?q={}"
+			},
+			{
+				"alias": "d",
+				"name": "DuckDuckGo Search",
+				"url": "https://duckduckgo.com/?q={}"
+			},
+			{
+				"alias": "!d",
+				"name": "DuckDuckGo Lucky Search",
+				"url": "https://duckduckgo.com/?q=!ducky+{}"
+			},
+			{
+				"alias": "b",
+				"name": "Brave Search",
+				"url": "https://search.brave.com/search?q={}"
+			},
+			{
+				"alias": "gh",
+				"name": "Github Search",
+				"url": "https://github.com/search?q={}"
+			},
+			{
+				"alias": "s",
+				"name": "Stack Overflow Search",
+				"url": "https://stackoverflow.com/search?q={}"
+			},
+			{
+				"alias": "r",
+				"name": "Subreddit Search",
+				"url": "https://reddit.com/r/{}"
+			},
+			{
+				"alias": "w",
+				"name": "Wikipedia Search",
+				"url": "https://en.wikipedia.org/wiki/{}"
+			},
+			{
+				"alias": "tkr!",
+				"name": "Tekir Search",
+				"url": "https://tekir.co/search?q={}"
+			}
+		]
+	},
+	"sections": {
+		"list": [
+			{
+				"title": "AI",
+				"color": "blue",
+				"align": "left",
+				"links": [
+					{
+						"name": "GPT",
+						"url": "https://chat.openai.com/",
+						"icon": "simple-icons:openai"
+					},
+					{
+						"name": "Gemini",
+						"url": "https://gemini.google.com/",
+						"icon": "simple-icons:google"
+					},
+					{
+						"name": "DeepL",
+						"url": "https://www.deepl.com/",
+						"icon": "simple-icons:deepl"
+					}
+				]
+			},
+			{
+				"title": "Dev",
+				"color": "green",
+				"align": "left",
+				"links": [
+					{
+						"name": "GitHub",
+						"url": "https://github.com",
+						"icon": "mdi:github"
+					},
+					{
+						"name": "Dev.to",
+						"url": "https://dev.to",
+						"icon": "material-symbols:logo-dev"
+					},
+					{
+						"name": "Stack Overflow",
+						"url": "https://stackoverflow.com/",
+						"icon": "mdi:stack-overflow"
+					},
+					{
+						"name": "Arch Wiki",
+						"url": "https://wiki.archlinux.org/",
+						"icon": "mdi:arch"
+					}
+				]
+			},
+			{
+				"title": "Anime & Manga",
+				"color": "cyan",
+				"align": "left",
+				"links": [
+					{
+						"name": "AniList",
+						"url": "https://anilist.co/",
+						"icon": "simple-icons:anilist"
+					},
+					{
+						"name": "MyAnimeList",
+						"url": "https://myanimelist.net/",
+						"icon": "simple-icons:myanimelist"
+					},
+					{
+						"name": "MangaDex",
+						"url": "https://mangadex.org/",
+						"icon": "mdi:book-open-variant"
+					},
+					{
+						"name": "AniWave",
+						"url": "https://aniwave.to/",
+						"icon": "mdi:play-circle"
+					}
+				]
+			},
+			{
+				"title": "Social",
+				"color": "magenta",
+				"align": "left",
+				"links": [
+					{
+						"name": "Reddit",
+						"url": "https://reddit.com",
+						"icon": "mdi:reddit"
+					},
+					{
+						"name": "Instagram",
+						"url": "https://instagram.com",
+						"icon": "ri:instagram-fill"
+					},
+					{
+						"name": "Discord",
+						"url": "https://discord.com",
+						"icon": "ri:discord-fill"
+					},
+					{
+						"name": "Polywork",
+						"url": "https://polywork.com",
+						"icon": "simple-icons:polywork"
+					}
+				]
+			},
+			{
+				"title": "Music",
+				"color": "yellow",
+				"align": "left",
+				"links": [
+					{
+						"name": "Soundcloud",
+						"url": "https://soundcloud.com/",
+						"icon": "mdi:soundcloud"
+					},
+					{
+						"name": "Last.fm",
+						"url": "https://last.fm",
+						"icon": "simple-icons:lastdotfm"
+					}
+				]
+			},
+			{
+				"title": "Communities",
+				"color": "orange",
+				"align": "left",
+				"links": [
+					{
+						"name": "BTT Community",
+						"url": "https://btt.community/",
+						"icon": "mdi:forum"
+					},
+					{
+						"name": "Hyprland Wiki",
+						"url": "https://wiki.hyprland.org/",
+						"icon": "mdi:monitor-dashboard"
+					},
+					{
+						"name": "r/unixporn",
+						"url": "https://reddit.com/r/unixporn",
+						"icon": "mdi:palette"
+					}
+				]
+			}
+		]
+	}
+}

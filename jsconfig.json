@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@components/*": ["src/components/*"],
+			"@pages/*": ["src/pages/*"],
+			"@hooks/*": ["src/hooks/*"],
+			"@utils/*": ["src/utils/*"]
+		},
+		"lib": ["webworker"]
+	},
+	"exclude": ["tools", "public/sw.js"]
+}

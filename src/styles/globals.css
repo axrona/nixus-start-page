@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background-color: #121317;
+	--glow-color: transparent;
+	--window-opacity: 1;
+	--window-color: #1e212b;
+	--window-blur: 0px;
+
+	--text-color: #e2e2e2;
+	--white: #e2e2e2;
+	--gray: #97989d;
+	--black: #16161e;
+	--red: #ec6183;
+	--green: #2ed8a2;
+	--yellow: #e8b195;
+	--blue: #2bc3de;
+	--cyan: #62e0e2;
+	--magenta: #e069aa;
+
+	--url-default: var(--text-color);
+	--url-hover: var(--magenta);
+
+	--selection-fg: var(--black);
+	--selection-bg: var(--yellow);
+	--placeholder-color: var(--gray);
+
+	--text-glow: false;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	background-color: var(--background-color);
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Fira Code", monospace;
+}
+
+a,
+a:active,
+a:visited {
+	color: var(--url-default);
+	text-decoration: none;
+	transition: color 0.2s !important;
+}
+
+a:hover {
+	color: var(--url-hover) !important;
+	transition: color 0.2s !important;
+}
+
+::selection {
+	color: var(--selection-fg);
+	background: var(--selection-bg);
+}
+
+::placeholder {
+	color: var(--placeholder-color) !important;
+}
+
+.window-glow {
+	box-shadow:
+		0 0 5px var(--glow-color),
+		0 0 25px var(--glow-color),
+		0 0 50px var(--glow-color),
+		0 0 200px var(--glow-color);
+
+	transition: box-shadow 0.2s;
+}
+
+.text-glow {
+	text-shadow: 0px 0px 10px;
+}
+
+.bg-window-color {
+	opacity: var(--window-opacity);
+	backdrop-filter: blur(var(--window-blur));
+}
+
+.selected {
+	background-color: var(--selection-bg);
+	color: var(--selection-fg) !important;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+
+.ace_editor,
+.ace_gutter {
+	background-color: var(--window-color) !important;
+}
+
+img {
+	pointer-events: none !important;
+	user-select: none !important;
+}
